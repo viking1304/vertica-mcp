@@ -58,6 +58,7 @@ export class VerticaService {
         user: this.config.user,
         password: this.config.password,
         connectionTimeoutMillis: this.config.queryTimeout || 30000,
+        connectionloadbalance: this.config.connectionLoadBalance ?? false,
       };
 
       // Add SSL/TLS configuration if specified
